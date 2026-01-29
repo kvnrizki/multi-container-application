@@ -10,7 +10,7 @@ Make sure Docker and Docker Compose are installed on your machine before startin
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/kvnrizki/multi-container-application.git
     cd multi-container-application
     ```
 
