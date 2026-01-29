@@ -3,6 +3,34 @@ Use Docker Compose to run a multi-container application
 
 The goal of this project is to practice using Docker Compose to run a multi-container application in production. You will use Docker Compose to run a Node.js application and a MongoDB database.
 
+## TL;DR
+To run this multi-container application locally using Docker, follow these steps:
+
+Make sure Docker and Docker Compose are installed on your machine before starting.
+
+1. **Clone the repository**:
+    ```bash
+    git clone <repository-url>
+    cd multi-container-application
+    ```
+
+2. **Build and run the containers**:
+    ```bash
+    docker-compose up --build
+    ```
+
+3. **Access the API**:
+    Open your browser and navigate to `http://localhost:3000` to interact with the API.
+
+4. **Persist data**:
+    Ensure that your MongoDB container is configured to persist data by using a volume in your `docker-compose.yml`.
+
+5. **Stop the containers**:
+    To stop the application, press `CTRL+C` in the terminal where the containers are running, or run:
+    ```bash
+    docker-compose down
+    ```
+
 ## Requirements
 Create a simple unauthenticated Node.js API service for creating a simple todo list. The API should have the following endpoints:
 
